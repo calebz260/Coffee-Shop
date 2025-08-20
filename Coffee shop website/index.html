@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffea | Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="img/icon 1.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="top-bar-container">
+        <div class="top-left">
+          <span><i class="fas fa-phone-alt"></i> +250 795 804 262</span>
+          <span><i class="fas fa-envelope"></i> info@coffeashop.com</span>
+          <span><i class="fas fa-clock"></i> Mon - Sat: 7am - 9pm</span>
+        </div>
+        <div class="top-right">
+          <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+           <a href="https://www.youtube.com/@YourChannelName" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+
+    <!--nav-bar section-->
+    <div class="nav-bar">
+      <div class="container">
+        <div class="logo">Coffea</div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#coffee">Coffee</a></li>
+            <li><a href="#bakery">Bakery</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#about">About</a></li>
+            <span class="divider">|</span>
+            <li><a href="#contact">Contact us</a></li>
+            <li class="search-container">
+             <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+             <input type="text" id="searchInput" placeholder="Search coffee, bakery, shop..." />
+             <ul id="searchDropdown"></ul>
+</li>
+
+             <a href="#shop">
+           <button class="type">Shop Now</button>
+           </a>
+          </ul>
+        </nav>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="welcome">WELCOME</span>
+      <h1>We serve the<br>richest coffee<br>in the city</h1>
+      <p>Experience the bold aroma, smooth texture, and hand-crafted perfection brewed just for you.</p>
+      <a href="coffee.html" class="hero-btn">Order Now</a>
+    </div>
+    <div class="hero-image">
+      <img src="img/photo-1509042239860-f550ce710b93.jpeg" alt="Coffee Cup" />
+    </div>
+  </section>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle.addEventListener('click', () => nav.classList.toggle('active'));
+  </script>
+
+
+
+
+  <!-- COFFEE MENU SECTION -->
+  <main>
+    <section class="coffee-section"  id="coffee">
+      <h2 class="section-title">Our Coffee Menu</h2>
+      <div class="coffee-grid">
+
+       
+        <div class="coffee-card">
+          <img src="img/Espresso .jpg" alt="Espresso" />
+          <h3>Espresso</h3>
+          <p>Strong, bold coffee shot with intense flavor.</p>
+          <div class="card-bottom">
+            <span class="price">$2.50</span>
+            <a href="#" class="btn">Order Now</a>
+          </div>
+        </div>
+
+        <div class="coffee-card">
+          <img src="img/Latte.jpg" alt="Latte" />
+          <h3>Latte</h3>
+          <p>Espresso blended with steamed milk and light foam.</p>
+          <div class="card-bottom">
+            <span class="price">$3.50</span>
+            <a href="#" class="btn">Order Now</a>
+          </div>
+        </div>
+
+        <div class="coffee-card">
+          <img src="img/Cappuccino.jpg" alt="Cappuccino" />
+          <h3>Cappuccino</h3>
+          <p>Equal parts espresso, steamed milk, and foam.</p>
+          <div class="card-bottom">
+            <span class="price">$3.00</span>
+            <a href="#" class="btn">Order Now</a>
+          </div>
+        </div>
+
+        <div class="coffee-card">
+          <img src="img/Mocha.jpg" alt="Mocha" />
+          <h3>Mocha</h3>
+          <p>Espresso with chocolate syrup and creamy milk.</p>
+          <div class="card-bottom">
+            <span class="price">$4.00</span>
+            <a href="#" class="btn">Order Now</a>
+          </div>
+        </div>
+
+        <div class="coffee-card">
+          <img src="img/Cold Brew.jpg" alt="Cold Brew" />
+          <h3>Cold Brew</h3>
+          <p>Slow-brewed coffee served cold, smooth and rich.</p>
+          <div class="card-bottom">
+            <span class="price">$3.75</span>
+            <a href="#" class="btn">Order Now</a>
+          </div>
+        </div>
+
+        <div class="coffee-card">
+          <img src="img/Americano.jpg" alt="Americano" />
+          <h3>Americano</h3>
+          <p>Espresso diluted with hot water for a lighter taste.</p>
+          <div class="card-bottom">
+            <span class="price">$2.75</span>
+            <a href="#" class="btn">Order Now</a>
+          </div>
+        </div>
+
+        <div class="coffee-card">
+          <img src="img/Macchiato.jpg" alt="Macchiato" />
+          <h3>Macchiato</h3>
+          <p>Espresso topped with a small amount of milk foam.</p>
+          <div class="card-bottom">
+            <span class="price">$3.20</span>
+            <a href="#" class="btn">Order Now</a>
+          </div>
+        </div>
+
+        <div class="coffee-card">
+          <img src="img/Flat White.jpg" alt="Flat White" />
+          <h3>Flat White</h3>
+          <p>Velvety espresso with smooth steamed milk.</p>
+          <div class="card-bottom">
+            <span class="price">$3.40</span>
+            <a href="#" class="btn">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<section class="bakery-section" id="bakery">
+  <h2 class="section-title">Fresh From Our Bakery</h2>
+  <div class="bakery-grid">
+    <div class="bakery-card">
+      <img src="img/Butter Croissant.jpg" alt="Croissant" />
+      <h3>Butter Croissant</h3>
+      <p>Flaky, golden pastry with a rich buttery flavor.</p>
+      <div class="card-bottom">
+        <span class="price">$1.80</span>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+    </div>
+    <div class="bakery-card">
+      <img src="img/Blueberry Muffin.jpg" alt="Muffin" />
+      <h3>Blueberry Muffin</h3>
+      <p>Moist muffin filled with fresh blueberries.</p>
+      <div class="card-bottom">
+        <span class="price">$2.00</span>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+    </div>
+    <div class="bakery-card">
+      <img src="img/Chocolate Donut.jpg" alt="Donut" />
+      <h3>Chocolate Donut</h3>
+      <p>Classic donut topped with rich chocolate glaze.</p>
+      <div class="card-bottom">
+        <span class="price">$1.50</span>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+    </div>
+    <div class="bakery-card">
+      <img src="img/Cinnamon Roll.jpg" alt="Cinnamon Roll" />
+      <h3>Cinnamon Roll</h3>
+      <p>Soft roll swirled with cinnamon and sugar glaze.</p>
+      <div class="card-bottom">
+        <span class="price">$2.25</span>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+    </div>
+    <div class="bakery-card">
+      <img src="img/Apple Pie.jpg" alt="Apple Pie" />
+      <h3>Apple Pie</h3>
+      <p>Classic pie filled with sweet spiced apples.</p>
+      <div class="card-bottom">
+        <span class="price">$3.00</span>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+    </div>
+    <div class="bakery-card">
+      <img src="img/Cheesecake.jpg" alt="Cheesecake" />
+      <h3>Cheesecake</h3>
+      <p>Creamy cheesecake with a graham cracker crust.</p>
+      <div class="card-bottom">
+        <span class="price">$3.75</span>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+    </div>
+    <div class="bakery-card">
+      <img src="img/Strawberry Tart.jpg" alt="Strawberry Tart" />
+      <h3>Strawberry Tart</h3>
+      <p>Fresh strawberries atop creamy custard and pastry.</p>
+      <div class="card-bottom">
+        <span class="price">$3.20</span>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+    </div>
+    <div class="bakery-card">
+      <img src="img/Chocolate Brownie.jpg" alt="Brownie" />
+      <h3>Chocolate Brownie</h3>
+      <p>Rich and fudgy chocolate brownie squares.</p>
+      <div class="card-bottom">
+        <span class="price">$2.30</span>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="shop-section" id="shop">
+  <h2 class="section-title">Our Best Sellers</h2>
+
+  <!-- Filter Buttons -->
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="drinkware">Drinkware</button>
+    <button class="filter-btn" data-filter="snacks">Snacks</button>
+    <button class="filter-btn" data-filter="apparel">Apparel</button>
+    <button class="filter-btn" data-filter="giftset">Gift Sets</button>
+  </div>
+
+  <!-- Product Grid -->
+  <div class="shop-grid">
+
+    <!-- Drinkware -->
+    <div class="shop-card" data-category="drinkware">
+      <img src="img/Coffea Mug.jpg" alt="Coffee Mug">
+      <h3>Coffea Mug</h3>
+      <p>Signature ceramic mug with elegant matte finish.</p>
+      <div class="card-bottom">
+        <span class="price">$8.50</span>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="shop-card" data-category="drinkware">
+      <img src="img/Insulated Tumbler.jpg" alt="Tumbler">
+      <h3>Insulated Tumbler</h3>
+      <p>Perfect for hot & cold beverages on the move.</p>
+      <div class="card-bottom">
+        <span class="price">$14.00</span>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Snacks -->
+    <div class="shop-card" data-category="snacks">
+      <img src="img/Espresso Cookies.jpg" alt="Cookies">
+      <h3>Espresso Cookies</h3>
+      <p>Buttery cookies infused with real espresso.</p>
+      <div class="card-bottom">
+        <span class="price">$5.50</span>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="shop-card" data-category="snacks">
+      <img src="img/Arabica Beans.jpg" alt="Beans">
+      <h3>Arabica Beans</h3>
+      <p>Freshly roasted beans, perfect for home brewing.</p>
+      <div class="card-bottom">
+        <span class="price">$12.99</span>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Apparel -->
+    <div class="shop-card" data-category="apparel">
+      <img src="img/Coffea T-Shirt.jpg" alt="T-Shirt">
+      <h3>Coffea T-Shirt</h3>
+      <p>Soft cotton shirt with minimal front logo print.</p>
+      <div class="card-bottom">
+        <span class="price">$18.00</span>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="shop-card" data-category="apparel">
+      <img src="img/Barista Apron.jpg" alt="Apron">
+      <h3>Barista Apron</h3>
+      <p>Stylish and durable apron for coffee lovers.</p>
+      <div class="card-bottom">
+        <span class="price">$22.00</span>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Gift Sets -->
+    <div class="shop-card" data-category="giftset">
+      <img src="img/Starter Gift Set.jpg" alt="Gift Box">
+      <h3>Starter Gift Set</h3>
+      <p>Includes beans, mug, and chocolate bites.</p>
+      <div class="card-bottom">
+        <span class="price">$24.99</span>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="shop-card" data-category="giftset">
+      <img src="img/Deluxe Coffee Box.jpg" alt="Deluxe Box">
+      <h3>Deluxe Coffee Box</h3>
+      <p>Luxury set: beans, tumbler, shirt & cookies.</p>
+      <div class="card-bottom">
+        <span class="price">$39.99</span>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Cart Container -->
+  <div class="cart-container">
+    <h3>Your Cart</h3>
+    <ul id="cart-items"></ul>
+    <p id="total-price">Total: $0.00</p>
+  </div>
+</section>
+
+
+<!-- ABOUT US SECTION -->
+<section class="about-section" id="about">
+  <div class="about-container">
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>
+        At <strong>Coffea</strong>, we’re more than just a coffee shop — we’re a community. Since opening in 2020, our goal has been simple: serve rich coffee, fresh pastries, and offer a welcoming space where people connect.
+      </p>
+      <p>
+        From ethically sourced beans to locally baked treats, we’re proud to offer quality in every cup and every bite. Whether you’re grabbing a quick espresso or staying to study, we’re here to serve you with a smile.
+      </p>
+      <ul class="about-highlights">
+        <li><i class="fas fa-mug-hot"></i> Specialty Coffee</li>
+        <li><i class="fas fa-bread-slice"></i> Artisan Baked Goods</li>
+        <li><i class="fas fa-users"></i> Friendly Baristas</li>
+        <li><i class="fas fa-leaf"></i> Sustainable Practices</li>
+      </ul>
+    </div>
+    <div class="about-image">
+      <img src="img/Main 7.jpg" alt="Coffee Art" />
+    </div>
+  </div>
+</section>
+
+
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+    
+    <!-- Map -->
+    <div class="contact-map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12419.427708714089!2d30.039951076049864!3d-1.9496887989487521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca520969405df%3A0xcf22b4a1a16a6c3f!2sNshuti%20Coffee%20Shop%20%26%20Fast%20Food!5e1!3m2!1sen!2srw!4v1755194019369!5m2!1sen!2srw"
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+
+    
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-main">
+   
+    <div class="footer-brand">
+      <h2>CoffeeLab</h2>
+      <p>Premium coffee, served with love.</p>
+    </div>
+
+    <div class="footer-nav">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#shop">Shop</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+
+    <div class="footer-contact">
+      <p>Email: info@coffeelab.com</p>
+      <p>Phone: +250 123 456 789</p>
+      <p>Kigali, Rwanda</p>
+      
+      <div class="footer-social">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.youtube.com/@YourChannelName" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 CoffeeLab. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+ <script>
+  // Filter
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const shopCards = document.querySelectorAll('.shop-card');
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+
+      shopCards.forEach(card => {
+        if (filter === 'all' || card.dataset.category === filter) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Cart
+  const cartItems = document.getElementById('cart-items');
+  const totalPriceEl = document.getElementById('total-price');
+  let total = 0;
+
+  document.querySelectorAll('.add-to-cart').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const card = btn.closest('.shop-card');
+      const name = card.querySelector('h3').innerText;
+      const priceText = card.querySelector('.price').innerText;
+      const price = parseFloat(priceText.replace('$', ''));
+
+      const li = document.createElement('li');
+      li.innerText = `${name} - $${price.toFixed(2)}`;
+      cartItems.appendChild(li);
+
+      total += price;
+      totalPriceEl.innerText = `Total: $${total.toFixed(2)}`;
+    });
+  });
+
+const searchIcon = document.querySelector('.search-icon');
+const searchInput = document.getElementById('searchInput');
+const searchDropdown = document.getElementById('searchDropdown');
+
+// All items mapped to sections and card selectors
+const items = [
+  { name: 'Espresso', section: '#coffee', selector: '.coffee-card:nth-child(1)' },
+  { name: 'Latte', section: '#coffee', selector: '.coffee-card:nth-child(2)' },
+  { name: 'Cappuccino', section: '#coffee', selector: '.coffee-card:nth-child(3)' },
+  { name: 'Mocha', section: '#coffee', selector: '.coffee-card:nth-child(4)' },
+  { name: 'Cold Brew', section: '#coffee', selector: '.coffee-card:nth-child(5)' },
+  { name: 'Americano', section: '#coffee', selector: '.coffee-card:nth-child(6)' },
+  { name: 'Macchiato', section: '#coffee', selector: '.coffee-card:nth-child(7)' },
+  { name: 'Flat White', section: '#coffee', selector: '.coffee-card:nth-child(8)' },
+
+  { name: 'Butter Croissant', section: '#bakery', selector: '.bakery-card:nth-child(1)' },
+  { name: 'Blueberry Muffin', section: '#bakery', selector: '.bakery-card:nth-child(2)' },
+  { name: 'Chocolate Donut', section: '#bakery', selector: '.bakery-card:nth-child(3)' },
+  { name: 'Cinnamon Roll', section: '#bakery', selector: '.bakery-card:nth-child(4)' },
+  { name: 'Apple Pie', section: '#bakery', selector: '.bakery-card:nth-child(5)' },
+  { name: 'Cheesecake', section: '#bakery', selector: '.bakery-card:nth-child(6)' },
+  { name: 'Strawberry Tart', section: '#bakery', selector: '.bakery-card:nth-child(7)' },
+  { name: 'Chocolate Brownie', section: '#bakery', selector: '.bakery-card:nth-child(8)' },
+
+  { name: 'Coffea Mug', section: '#shop', selector: '.shop-card:nth-child(1)' },
+  { name: 'Insulated Tumbler', section: '#shop', selector: '.shop-card:nth-child(2)' },
+  { name: 'Espresso Cookies', section: '#shop', selector: '.shop-card:nth-child(3)' },
+  { name: 'Arabica Beans', section: '#shop', selector: '.shop-card:nth-child(4)' },
+  { name: 'Coffea T-Shirt', section: '#shop', selector: '.shop-card:nth-child(5)' },
+  { name: 'Barista Apron', section: '#shop', selector: '.shop-card:nth-child(6)' },
+  { name: 'Starter Gift Set', section: '#shop', selector: '.shop-card:nth-child(7)' },
+  { name: 'Deluxe Coffee Box', section: '#shop', selector: '.shop-card:nth-child(8)' }
+];
+
+// Toggle search input
+searchIcon.addEventListener('click', (e) => {
+  e.preventDefault();
+  const isVisible = searchInput.style.display === 'block';
+  searchInput.style.display = isVisible ? 'none' : 'block';
+  if (!isVisible) searchInput.focus();
+});
+
+// Highlight function
+function highlightCard(selector) {
+  // Remove previous highlights
+  document.querySelectorAll('.coffee-card, .bakery-card, .shop-card').forEach(card => {
+    card.style.border = '1px solid transparent';
+    card.style.backgroundColor = 'inherit';
+  });
+
+  const card = document.querySelector(selector);
+  if (card) {
+    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    card.style.border = '1.5px solid #714209';
+    card.style.backgroundColor = '#000';
+  }
+}
+
+// Show suggestions and highlight
+searchInput.addEventListener('input', () => {
+  const query = searchInput.value.toLowerCase();
+  searchDropdown.innerHTML = '';
+  const filtered = items.filter(item => item.name.toLowerCase().includes(query));
+
+  filtered.forEach(item => {
+    const li = document.createElement('li');
+    li.textContent = item.name;
+    searchDropdown.appendChild(li);
+
+    li.addEventListener('click', () => {
+      highlightCard(item.selector);
+      searchDropdown.style.display = 'none';
+      searchInput.value = '';
+    });
+  });
+
+  searchDropdown.style.display = filtered.length ? 'block' : 'none';
+});
+
+// Press Enter -> highlight first exact match
+searchInput.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    const query = searchInput.value.toLowerCase();
+    const match = items.find(item => item.name.toLowerCase() === query);
+    if (match) {
+      highlightCard(match.selector);
+      searchInput.value = '';
+      searchDropdown.style.display = 'none';
+    }
+  }
+});
+
+// Hide dropdown when clicking outside
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.search-container')) {
+    searchInput.style.display = 'none';
+    searchDropdown.style.display = 'none';
+  }
+});
+
+</script>
+  </main>
+</body>
+</html>
